@@ -1,0 +1,12 @@
+<input type="number" [(ngModel)]="capitalInicial" placeholder="Capital Inicial" />
+<input type="number" [(ngModel)]="taxaJuros" placeholder="Taxa de Juros" />
+<input type="number" [(ngModel)]="periodoTempo" placeholder="Período de Tempo" />
+
+
+
+<p>O capital inicial é: {{capitalInicial}}</p>
+<p>A taxa de juros é: {{taxaJuros}}</p>
+
+<button (click)="calcular()">Calcular</button>
+<p>Juros simples: {{juros}}</p>
+<p>Montante Total: {{montante}}</p>
