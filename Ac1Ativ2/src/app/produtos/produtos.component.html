@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <div *ngIf="produtos.length === 0" class="alert alert-warning">
+    Nenhum produto disponível no momento.
+  </div>
+
+  <div class="row">
+    <div *ngFor="let produto of produtos" class="col-md-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ produto.nome }}</h5>
+          <p class="card-text">{{ produto.descricao }}</p>
+          <p class="card-text">
+            <strong>Preço:</strong> {{ produto.preco | currency : "BRL" }}
+          </p>
+        </div>
+        <div class="card-footer">
+          <button
+            class="btn btn-primary w-100"
+            [disabled]="!produto.emEstoque"
+            [ngClass]="{ 'btn-secondary': !produto.emEstoque }"
+          >
+            {{ produto.emEstoque ? "Comprar" : "Fora de Estoque" }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

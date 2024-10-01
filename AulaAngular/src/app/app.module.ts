@@ -10,6 +10,9 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
 import { CalcularJurosSimplesComponent } from './calcular-juros-simples/calcular-juros-simples.component';
+import { ClienteComponent } from './cliente/cliente.component';
+import { ListaClienteComponent } from './cliente/lista-cliente/lista-cliente.component';
+import { ListaCompraClienteComponent } from './cliente/lista-compra-cliente/lista-compra-cliente.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { CalcularJurosSimplesComponent } from './calcular-juros-simples/calcular
     FeatureComponent,
     AboutComponent,
     NotFoundComponent,
-    CalcularJurosSimplesComponent
+    CalcularJurosSimplesComponent,
+    ClienteComponent,
+    ListaClienteComponent,
+    ListaCompraClienteComponent
   ],
   imports: [
     BrowserModule,
