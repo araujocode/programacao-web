@@ -30,7 +30,7 @@ export class ProdutosComponent {
       nome: 'Produto 3',
       preco: 200,
       descricao: 'Descrição do produto 3',
-      emEstoque: true,
+      emEstoque: false,
     },
   ];
 }
